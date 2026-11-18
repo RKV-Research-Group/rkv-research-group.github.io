@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=5">
 </head>
 <body data-page="research.html">
 <main>
@@ -125,8 +125,8 @@
 </section>
 <section class="tight"><div class="wrap more-row"><p style="color:var(--ink-2);max-width:640px">Interested in collaborating on any of these themes, or in joining the group as a research student?</p><div style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn line" href="projects.html">Sponsored projects →</a><a class="btn dark" href="contact.html">Get in touch →</a></div></div></section>
 </main>
-<script src="data.js"></script>
-<script src="site.js"></script>
+<script src="data.js?v=5"></script>
+<script src="site.js?v=5"></script>
 <script>
 document.querySelectorAll('.rel').forEach(el=>{
   const re=new RegExp(el.dataset.match); const list=PUBS.filter(p=>re.test(p.t)).slice(0,4);

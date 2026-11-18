@@ -27,4 +27,4 @@ Upload an image with exactly this name (lowercase, `.jpg`) and it appears automa
 
 - `varma.jpg` — portrait on the home page
 - `research-frc.jpg`, `research-frp.jpg`, `research-meta.jpg`, `research-waves.jpg`, `research-wind.jpg`, `research-pave.jpg` — research themes (landscape, about 1200 × 900)
-- `people-saalim.jpg`, `people-ashfaq.jpg`, `people-swati.jpg`, `people-bhargav.jpg`, `people-haseeb.jpg`, `people-satyendra.jpg` — group members (square)
+- `people-saalim.jpg`, `people-ashfaq.jpg`, `people-swati.jpg`, `people-bhargav.jpg`, `people-haseeb.jpg`, `people-satyendra.jpg`, `people-vijay.jpg` — group members (square)
