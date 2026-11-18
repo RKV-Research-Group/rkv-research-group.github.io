@@ -61,6 +61,19 @@ const SITE = {
     try{navigator.clipboard.writeText(SITE.email).then(()=>{b.textContent="Copied";setTimeout(()=>b.textContent="Copy",1500)}).catch(()=>{})}catch(e){}
   }));
 
+  // enlarge research figures on click
+  const shots=document.querySelectorAll("a.shot");
+  if(shots.length){
+    const lb=document.createElement("div"); lb.className="lb";
+    lb.innerHTML='<button type="button">Close ✕</button><img alt=""><p></p>';
+    document.body.append(lb);
+    const close=()=>lb.classList.remove("open");
+    lb.addEventListener("click",close);
+    document.addEventListener("keydown",e=>{if(e.key==="Escape")close()});
+    shots.forEach(a=>a.addEventListener("click",e=>{e.preventDefault();
+      lb.querySelector("img").src=a.getAttribute("href"); lb.querySelector("p").textContent=a.dataset.cap||""; lb.classList.add("open");}));
+  }
+
   // reveal on scroll
   const els=document.querySelectorAll(".reveal");
   if("IntersectionObserver" in window){

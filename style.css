@@ -45,7 +45,7 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(247,245,240,.94);bac
 .textlink:hover{border-color:var(--accent)}
 
 /* ---------- home hero ---------- */
-.hero{position:relative;overflow:hidden;padding:80px 0 88px;background:var(--navy);color:#eef1f4}
+.hero{position:relative;overflow:hidden;padding:80px 0 96px;background:var(--navy);color:#eef1f4}
 .hero .wrap{position:relative;z-index:2}
 .hero-grid{display:grid;grid-template-columns:1.3fr .85fr;gap:56px;align-items:center}
 .eyebrow{font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-soft)}
@@ -321,3 +321,35 @@ img[data-optional].ok{opacity:1}
   .filters .count{margin-left:0;width:100%}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+
+/* ---------- research figure galleries ---------- */
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.shot{grid-column:span 2;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:6px;padding:14px;text-decoration:none;cursor:zoom-in;transition:box-shadow .2s,border-color .2s}
+.shot.half{grid-column:span 1}
+.shot:hover{border-color:var(--ink-3);box-shadow:0 10px 26px -16px rgba(20,32,43,.35)}
+.shot img{width:100%;height:auto;max-height:440px;object-fit:contain;margin:0 auto}
+.shot.half img{max-height:220px;min-height:120px}
+.shot.tall img{max-height:520px}
+.shot span{font-size:12.5px;line-height:1.45;color:var(--ink-3);margin-top:10px}
+.fig figcaption.methods{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-top:14px}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(10,18,26,.92);display:none;align-items:center;justify-content:center;padding:40px 24px;flex-direction:column;cursor:zoom-out}
+.lb.open{display:flex}
+.lb img{max-width:min(1200px,100%);max-height:80vh;object-fit:contain;background:#fff;border-radius:4px;padding:10px}
+.lb p{color:#dbe3ea;font-size:14.5px;margin-top:14px;max-width:900px;text-align:center}
+.lb button{position:absolute;top:18px;right:22px;background:none;border:1px solid rgba(255,255,255,.3);color:#fff;border-radius:99px;padding:6px 14px;font:500 14px var(--sans);cursor:pointer}
+
+/* ---------- home: at a glance ---------- */
+.glance-sec{background:var(--navy)}
+.glance{display:grid;grid-template-columns:repeat(4,1fr)}
+.glance div{padding:6px 24px;border-left:1px solid rgba(255,255,255,.14)}
+.glance div:first-child{border-left:0;padding-left:0}
+.glance b{display:block;font-family:var(--serif);font-weight:500;font-size:38px;color:#fff;line-height:1.1}
+.glance span{font-size:14px;color:#9fb0c1}
+@media (max-width:760px){.glance{grid-template-columns:1fr 1fr;row-gap:22px}.glance div:nth-child(3){border-left:0;padding-left:0}}
+
+/* ---------- justified body text ---------- */
+.prose p,.theme p,.course p,.role-card p,.join p,.proj p{text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.prose p.lead{text-align:left;hyphens:manual}
+.shot.mid img{max-height:320px}
