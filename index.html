@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body data-page="index.html">
 <main>
@@ -39,17 +39,17 @@
           <a class="btn ghost" href="group.html">Join the group</a>
         </div>
       </div>
-      <!-- PHOTO: upload a portrait to images/varma.jpg and it appears here automatically -->
+      <!-- PHOTO: upload a portrait to varma.jpg and it appears here automatically -->
       <div class="portrait">
         <div class="mono">RKV</div>
-        <img data-optional src="images/varma.jpg" alt="Dr Rajendra Kumar Varma">
+        <img data-optional src="varma.jpg" alt="Dr Rajendra Kumar Varma">
         <div class="cap"><b>Structures &amp; Materials Research Group</b>IIT Jammu · Jagti campus · Jammu &amp; Kashmir</div>
       </div>
     </div>
     <div class="stats">
       <div class="stat"><b>3</b><span>PhD graduates</span></div>
       <div class="stat"><b>3</b><span>Current doctoral scholars</span></div>
-      <div class="stat"><b>20+</b><span>Journal &amp; conference papers</span></div>
+      <div class="stat"><b>5 yrs</b><span>International design practice</span></div>
       <div class="stat"><b>6+</b><span>Consultancy clients across J&amp;K and India</span></div>
     </div>
   </div>
@@ -60,7 +60,7 @@
     <div><div class="sec-num">Welcome</div></div>
     <div class="prose reveal">
       <p class="lead">Dr Varma leads research at the meeting point of experimental testing and numerical simulation of concrete, composite and architected structures.</p>
-      <p>After a B.Tech in Civil Engineering at IIT Guwahati and a PhD in Structural Engineering at the University of Minho, Portugal, he joined IIT Jammu in 2017, where he served as Head of the Department of Civil Engineering from 2018 to 2020. Alongside research and teaching, he advises government agencies and industry on the design, proof checking and testing of bridges and buildings across Jammu &amp; Kashmir and India.</p>
+      <p>After a B.Tech at IIT Guwahati and seven years of research at the University of Minho, Portugal, culminating in a PhD, he spent five years designing bridges, metro and tunnel structures with COWI, Bechtel and Aarvee Associates — including projects in Denmark, Qatar and Venezuela. He joined IIT Jammu in 2017 and served as Head of the Department of Civil Engineering from 2018 to 2020. Alongside research and teaching, he advises government agencies and industry on the design, proof checking and testing of bridges and buildings across Jammu &amp; Kashmir and India.</p>
       <a class="textlink" href="about.html">Full biography →</a>
     </div>
   </div>
@@ -108,8 +108,8 @@
   </div>
 </section>
 </main>
-<script src="assets/data.js"></script>
-<script src="assets/site.js"></script>
+<script src="data.js"></script>
+<script src="site.js"></script>
 <script>
 document.getElementById('latest').innerHTML = PUBS.slice(0,4).map(p=>{const L=pubLink(p);return `<li class="pub"><div class="y">${p.y}</div><div><div class="t"><a href="${L.href}" target="_blank" rel="noopener">${p.t}</a></div><div class="a">${boldMe(p.a)}</div><div class="v">${p.v}</div></div><div class="l"><a href="${L.href}" target="_blank" rel="noopener">${L.label}</a></div></li>`}).join('');
 </script>

@@ -245,6 +245,7 @@ a.card:hover .go{color:var(--accent);transform:translateX(3px)}
 .tl .what{font-weight:500}
 .tl .where{color:var(--ink-2);font-size:15.5px}
 .roles{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:900px}
+.roles.three{grid-template-columns:repeat(3,1fr);max-width:none}
 .role-card{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:26px}
 .role-card .when{font-family:var(--mono);font-size:12.5px;color:var(--accent)}
 .role-card h3{font-family:var(--serif);font-weight:500;font-size:20px;margin:6px 0 4px;line-height:1.3}
@@ -300,7 +301,7 @@ img[data-optional].ok{opacity:1}
   .portrait{max-width:300px;aspect-ratio:1}
   .stats{grid-template-columns:repeat(2,1fr)}
   .cards,.expertise,.people,.join,.reasons{grid-template-columns:1fr 1fr}
-  .cprojects,.confs,.courses,.roles{grid-template-columns:1fr}
+  .cprojects,.confs,.courses,.roles,.roles.three{grid-template-columns:1fr}
   .proj{grid-template-columns:1fr;gap:6px}
   .proj .meta{text-align:left}
   .sec-head,.split{gap:18px}
