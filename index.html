@@ -4,573 +4,114 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dr Rajendra Kumar Varma — Structural Engineering, IIT Jammu</title>
-<meta name="description" content="Dr Rajendra Kumar Varma, Associate Professor of Civil Engineering at IIT Jammu. Research in concrete and FRP structures, computational mechanics, architected materials, wind engineering and precast pavements. Structural consultancy across India and Jammu & Kashmir.">
+<meta name="description" content="Dr Rajendra Kumar Varma, Associate Professor of Civil Engineering at IIT Jammu: research in concrete and FRP structures, computational mechanics, architected materials, wind engineering and precast pavements; structural consultancy across India and Jammu & Kashmir.">
 <link rel="canonical" href="https://rkv-research-group.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://rkv-research-group.github.io/">
 <meta property="og:title" content="Dr Rajendra Kumar Varma — Structural Engineering, IIT Jammu">
-<meta property="og:description" content="Associate Professor of Civil Engineering at IIT Jammu. Research in concrete and FRP structures, computational mechanics, architected materials, wind engineering and precast pavements; structural consultancy across India and Jammu & Kashmir.">
+<meta property="og:description" content="Dr Rajendra Kumar Varma, Associate Professor of Civil Engineering at IIT Jammu: research in concrete and FRP structures, computational mechanics, architected materials, wind engineering and precast pavements; structural consultancy across India and Jammu & Kashmir.">
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2316283a'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='28' fill='%23ffffff' text-anchor='middle'%3ERKV%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
-:root{
-  --ink:#14202b; --ink-2:#3b4a57; --ink-3:#6b7884;
-  --paper:#f7f5f0; --paper-2:#efebe3; --card:#ffffff;
-  --line:#ddd7cc; --accent:#b4532a; --accent-2:#8e3e1d;
-  --navy:#16283a; --navy-2:#1f3a52; --sage:#5e7d6e;
-  --serif:'Fraunces',Georgia,serif; --sans:'IBM Plex Sans',system-ui,sans-serif; --mono:'IBM Plex Mono',ui-monospace,monospace;
-  --max:1160px;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:72px}
-body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased}
-a{color:inherit}
-img,svg{display:block;max-width:100%}
-.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
-
-/* nav */
-header.nav{position:sticky;top:0;z-index:50;background:rgba(247,245,240,.92);backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .2s}
-header.nav.scrolled{border-bottom-color:var(--line)}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
-.brand{font-family:var(--serif);font-weight:600;font-size:19px;text-decoration:none;letter-spacing:-.01em}
-.brand span{color:var(--accent)}
-.nav ul{display:flex;gap:26px;list-style:none}
-.nav ul a{text-decoration:none;font-size:14.5px;color:var(--ink-2);font-weight:500;position:relative;padding:4px 0}
-.nav ul a:hover,.nav ul a.active{color:var(--ink)}
-.nav ul a.active::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;background:var(--accent)}
-.menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:8px;padding:7px 11px;font:500 14px var(--sans);color:var(--ink);cursor:pointer}
-
-/* hero */
-.hero{position:relative;overflow:hidden;padding:84px 0 96px;background:var(--navy);color:#eef1f4}
-.hero .wrap{display:grid;grid-template-columns:1.25fr .9fr;gap:56px;align-items:center;position:relative;z-index:2}
-.eyebrow{font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:#e9a57f}
-.hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(40px,5.4vw,64px);line-height:1.04;letter-spacing:-.02em;margin:18px 0 18px}
-.hero .role{font-size:19px;color:#c9d3dc;max-width:560px}
-.hero .role strong{color:#fff;font-weight:500}
-.hero .lede{margin-top:22px;color:#aebccb;max-width:560px;font-size:16.5px}
-.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;text-decoration:none;font-weight:500;font-size:15px;transition:transform .15s,background .15s}
-.btn:hover{transform:translateY(-1px)}
-.btn.primary{background:var(--accent);color:#fff}
-.btn.primary:hover{background:#c55f33}
-.btn.ghost{border:1px solid rgba(255,255,255,.28);color:#eef1f4}
-.btn.ghost:hover{background:rgba(255,255,255,.08)}
-.portrait{position:relative;aspect-ratio:4/5;border-radius:6px;background:linear-gradient(160deg,#2a4762,#1a2f43);border:1px solid rgba(255,255,255,.12);display:flex;align-items:flex-end;padding:26px;overflow:hidden}
-.portrait .mono{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--serif);font-size:120px;color:rgba(255,255,255,.1);letter-spacing:-.04em}
-.portrait .cap{position:relative;font-size:13px;color:#b7c4d1;line-height:1.5}
-.portrait .cap b{display:block;color:#fff;font-weight:500;font-size:15px}
-.hero-art{position:absolute;inset:0;z-index:1;opacity:.5;pointer-events:none}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.14);margin-top:64px;position:relative;z-index:2}
-.stat{padding:22px 20px 0 0}
-.stat b{display:block;font-family:var(--serif);font-weight:500;font-size:32px;color:#fff;line-height:1.1}
-.stat span{font-size:13.5px;color:#9fb0c1}
-
-/* sections */
-section{padding:96px 0}
-section.alt{background:var(--paper-2)}
-.sec-head{display:grid;grid-template-columns:240px 1fr;gap:40px;margin-bottom:48px;align-items:start}
-.sec-num{font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;color:var(--accent);text-transform:uppercase;padding-top:12px;border-top:2px solid var(--accent);width:max-content}
-.sec-head h2{font-family:var(--serif);font-weight:500;font-size:clamp(30px,3.6vw,42px);line-height:1.12;letter-spacing:-.015em}
-.sec-head p{color:var(--ink-2);margin-top:14px;max-width:680px}
-
-/* about */
-.about-grid{display:grid;grid-template-columns:240px 1fr;gap:40px}
-.about-body p{margin-bottom:18px;color:var(--ink-2);max-width:720px}
-.about-body p:first-child{font-family:var(--serif);font-size:22px;line-height:1.5;color:var(--ink)}
-.timeline{margin-top:36px;border-left:1px solid var(--line);padding-left:26px;max-width:720px}
-.tl{position:relative;padding-bottom:22px}
-.tl::before{content:"";position:absolute;left:-31px;top:8px;width:9px;height:9px;border-radius:50%;background:var(--paper);border:2px solid var(--accent)}
-.tl .when{font-family:var(--mono);font-size:12.5px;color:var(--ink-3)}
-.tl .what{font-weight:500}
-.tl .where{color:var(--ink-2);font-size:15.5px}
-
-/* research */
-.areas{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
-.area{background:var(--paper);padding:30px 28px 32px;transition:background .2s}
-.area:hover{background:#fff}
-.area svg{width:44px;height:44px;margin-bottom:20px;stroke:var(--accent);fill:none;stroke-width:1.5}
-.area h3{font-family:var(--serif);font-weight:500;font-size:21px;line-height:1.25;margin-bottom:10px}
-.area p{font-size:15.5px;color:var(--ink-2)}
-.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
-.tag{font-family:var(--mono);font-size:11.5px;padding:3px 8px;border:1px solid var(--line);border-radius:4px;color:var(--ink-3)}
-
-/* projects */
-.proj-list{border-top:1px solid var(--ink)}
-.proj{display:grid;grid-template-columns:110px 1fr 200px;gap:28px;padding:26px 0;border-bottom:1px solid var(--line);align-items:baseline}
-.proj .yr{font-family:var(--mono);font-size:13px;color:var(--ink-3)}
-.proj h3{font-family:var(--serif);font-weight:500;font-size:20px;line-height:1.3}
-.proj p{font-size:15px;color:var(--ink-2);margin-top:6px}
-.proj .meta{text-align:right;font-size:14px;color:var(--ink-2)}
-.proj .meta b{display:block;color:var(--ink);font-weight:500}
-.pill{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:99px;margin-top:6px}
-.pill.on{background:#e3ece6;color:#365646}
-.pill.done{background:#ece7de;color:#6b5f4c}
-
-/* consultancy */
-.consult{background:var(--navy);color:#e6ebf0}
-.consult .sec-head p{color:#a9b8c7}
-.consult .sec-head h2{color:#fff}
-.services{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:56px}
-.svc{border:1px solid rgba(255,255,255,.14);border-radius:6px;padding:26px}
-.svc .n{font-family:var(--mono);font-size:12px;color:#e9a57f}
-.svc h3{font-family:var(--serif);font-weight:500;font-size:20px;color:#fff;margin:10px 0 8px}
-.svc p{font-size:15px;color:#a9b8c7}
-.consult h4{font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:#e9a57f;margin-bottom:16px}
-.cprojects{display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
-.cp{display:flex;justify-content:space-between;gap:20px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.12);font-size:15.5px}
-.cp span:last-child{color:#a9b8c7;font-size:14px;text-align:right;white-space:nowrap}
-.clients{display:flex;flex-wrap:wrap;gap:10px;margin-top:40px}
-.clients span{border:1px solid rgba(255,255,255,.2);border-radius:99px;padding:7px 16px;font-size:14px;color:#dfe6ec}
-.consult .note{margin-top:40px;padding:22px 26px;background:rgba(255,255,255,.05);border-left:3px solid var(--accent);font-size:15.5px;color:#cbd5de}
-.consult .note a{color:#fff}
-
-/* group */
-.grp-label{display:flex;align-items:center;gap:14px;margin:0 0 22px;font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
-.grp-label::after{content:"";flex:1;height:1px;background:var(--line)}
-.people{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-bottom:56px}
-.person{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:26px;display:flex;flex-direction:column;transition:box-shadow .2s,transform .2s}
-.person:hover{box-shadow:0 10px 30px -14px rgba(20,32,43,.25);transform:translateY(-2px)}
-.ph{display:flex;gap:16px;align-items:center;margin-bottom:16px}
-.av{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-family:var(--serif);font-size:20px;color:#fff;flex:none}
-.person h3{font-family:var(--serif);font-weight:500;font-size:19px;line-height:1.25}
-.person .deg{font-family:var(--mono);font-size:12px;color:var(--accent)}
-.person .now{font-size:14.5px;color:var(--ink-2);margin-bottom:10px}
-.person .topic{font-size:14.5px;color:var(--ink);padding-top:12px;border-top:1px dashed var(--line);margin-top:auto}
-.person .topic em{font-style:normal;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);display:block;margin-bottom:2px}
-.links{display:flex;gap:14px;margin-top:16px;font-size:13.5px}
-.links a{text-decoration:none;color:var(--accent-2);font-weight:500;border-bottom:1px solid rgba(180,83,42,.3)}
-.links a:hover{border-color:var(--accent)}
-.empty{border:1px dashed var(--line);border-radius:6px;padding:34px;text-align:center;color:var(--ink-3);background:rgba(255,255,255,.4)}
-.join{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:36px 40px}
-.join h3{font-family:var(--serif);font-weight:500;font-size:26px;line-height:1.2}
-.join p{color:var(--ink-2);margin-top:10px;font-size:15.5px}
-.join ul{list-style:none;font-size:15px;color:var(--ink-2)}
-.join li{padding:8px 0 8px 22px;position:relative;border-bottom:1px solid var(--line)}
-.join li::before{content:"→";position:absolute;left:0;color:var(--accent)}
-
-/* publications */
-.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
-.filters button{font:500 13.5px var(--sans);padding:7px 14px;border-radius:99px;border:1px solid var(--line);background:transparent;color:var(--ink-2);cursor:pointer;transition:all .15s}
-.filters button:hover{border-color:var(--ink-3)}
-.filters button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
-.pubs{list-style:none;border-top:1px solid var(--ink)}
-.pub{display:grid;grid-template-columns:70px 1fr;gap:24px;padding:20px 0;border-bottom:1px solid var(--line)}
-.pub .y{font-family:var(--mono);font-size:13.5px;color:var(--ink-3);padding-top:2px}
-.pub .t{font-weight:500;font-size:16.5px;line-height:1.45}
-.pub .a{font-size:14.5px;color:var(--ink-2);margin-top:4px}
-.pub .a b{color:var(--ink);font-weight:600}
-.pub .v{font-size:14.5px;color:var(--ink-3);font-style:italic}
-.pub .v a{font-style:normal;font-family:var(--mono);font-size:12.5px;color:var(--accent-2);margin-left:8px}
-.more{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap}
-.btn.dark{background:var(--ink);color:#fff}
-.btn.line{border:1px solid var(--ink);color:var(--ink)}
-
-/* contact */
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px}
-.contact-card{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:34px}
-.row{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);font-size:15.5px}
-.row:last-child{border-bottom:0}
-.row .k{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);padding-top:3px}
-.row a{color:var(--accent-2)}
-.todo{color:var(--ink-3);font-style:italic}
-.map-art{border-radius:6px;overflow:hidden;background:var(--navy);min-height:320px;position:relative}
-.map-art .lbl{position:absolute;left:28px;bottom:26px;color:#fff}
-.map-art .lbl b{font-family:var(--serif);font-weight:500;font-size:24px;display:block}
-.map-art .lbl span{font-size:14px;color:#a9b8c7}
-
-footer{background:#0f1c28;color:#8798a8;padding:40px 0;font-size:14px}
-footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
-footer a{color:#c8d3dc;text-decoration:none;margin-left:20px}
-footer a:hover{color:#fff}
-
-.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
-.reveal.in{opacity:1;transform:none}
-
-@media (max-width:960px){
-  .nav ul{display:none;position:absolute;top:66px;left:0;right:0;flex-direction:column;gap:0;background:var(--paper);border-bottom:1px solid var(--line);padding:8px 28px 16px}
-  .nav ul.open{display:flex}
-  .nav ul a{display:block;padding:12px 0;border-bottom:1px solid var(--line)}
-  .nav ul a.active::after{display:none}
-  .menu-btn{display:block}
-  .hero .wrap,.sec-head,.about-grid,.contact-grid,.join{grid-template-columns:1fr}
-  .portrait{max-width:300px;aspect-ratio:1}
-  .stats{grid-template-columns:repeat(2,1fr)}
-  .areas,.services,.people{grid-template-columns:1fr 1fr}
-  .cprojects{grid-template-columns:1fr}
-  .proj{grid-template-columns:1fr;gap:6px}
-  .proj .meta{text-align:left}
-  .sec-head{gap:18px}
-}
-@media (max-width:620px){
-  body{font-size:16px}
-  section{padding:68px 0}
-  .areas,.services,.people{grid-template-columns:1fr}
-  .pub{grid-template-columns:1fr;gap:4px}
-  .cp{flex-direction:column;gap:2px}
-  .cp span:last-child{text-align:left}
-  .row{grid-template-columns:1fr;gap:2px}
-  footer a{margin:0 16px 0 0}
-}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
-</style>
+<link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
-
-<header class="nav" id="top">
-  <div class="wrap">
-    <a href="#home" class="brand">R. K. Varma<span>.</span></a>
-    <nav>
-      <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
-      <ul id="menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#consultancy">Consultancy</a></li>
-        <li><a href="#group">Group</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
+<body data-page="index.html">
 <main>
-<!-- HERO -->
-<section class="hero" id="home" style="padding-top:84px">
-  <svg class="hero-art" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-    <defs>
-      <pattern id="hex" width="56" height="97" patternUnits="userSpaceOnUse" patternTransform="scale(.9)">
-        <path d="M28 0 L56 16 L56 48 L28 64 L0 48 L0 16 Z M28 64 L28 97" fill="none" stroke="#3a5a78" stroke-width="1"/>
-      </pattern>
-      <linearGradient id="fade" x1="0" x2="1"><stop offset="0" stop-color="#16283a" stop-opacity="1"/><stop offset=".55" stop-color="#16283a" stop-opacity=".2"/><stop offset="1" stop-color="#16283a" stop-opacity="0"/></linearGradient>
-    </defs>
-    <rect width="1200" height="700" fill="url(#hex)"/>
-    <rect width="1200" height="700" fill="url(#fade)"/>
-    <path d="M0 610 L140 520 L230 570 L380 430 L500 520 L640 380 L760 470 L880 360 L1010 470 L1200 400 L1200 700 L0 700Z" fill="#12222f" opacity=".9"/>
-    <path d="M0 640 L180 580 L320 620 L470 540 L620 600 L800 520 L960 590 L1200 530 L1200 700 L0 700Z" fill="#0f1c28"/>
-  </svg>
+
+<section class="hero"><svg class="hero-art" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+<defs><pattern id="hex" width="56" height="97" patternUnits="userSpaceOnUse" patternTransform="scale(.9)"><path d="M28 0 L56 16 L56 48 L28 64 L0 48 L0 16 Z M28 64 L28 97" fill="none" stroke="#3a5a78" stroke-width="1"/></pattern>
+<linearGradient id="fade" x1="0" x2="1"><stop offset="0" stop-color="#16283a"/><stop offset=".55" stop-color="#16283a" stop-opacity=".2"/><stop offset="1" stop-color="#16283a" stop-opacity="0"/></linearGradient></defs>
+<rect width="1200" height="700" fill="url(#hex)"/><rect width="1200" height="700" fill="url(#fade)"/>
+<path d="M0 610 L140 520 L230 570 L380 430 L500 520 L640 380 L760 470 L880 360 L1010 470 L1200 400 L1200 700 L0 700Z" fill="#12222f" opacity=".9"/>
+<path d="M0 640 L180 580 L320 620 L470 540 L620 600 L800 520 L960 590 L1200 530 L1200 700 L0 700Z" fill="#0f1c28"/></svg>
   <div class="wrap">
-    <div>
-      <div class="eyebrow">Department of Civil Engineering · IIT Jammu</div>
-      <h1>Dr Rajendra Kumar Varma</h1>
-      <p class="role"><strong>Associate Professor</strong>, Indian Institute of Technology Jammu — structural engineering, computational mechanics and advanced construction materials.</p>
-      <p class="lede">Our group connects experiments and numerical models to make structures safer, lighter and longer-lasting: from fibre-reinforced and FRP-strengthened concrete, to architected metamaterials, to wind loads on hill terrain and precast pavements for mountain roads.</p>
-      <div class="cta">
-        <a class="btn primary" href="#research">Explore research</a>
-        <a class="btn ghost" href="#consultancy">Consultancy services</a>
-        <a class="btn ghost" href="#group">Join the group</a>
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">Department of Civil Engineering · IIT Jammu</div>
+        <h1>Dr Rajendra Kumar Varma</h1>
+        <p class="role"><strong>Associate Professor</strong>, Indian Institute of Technology Jammu — structural engineering, computational mechanics and advanced construction materials.</p>
+        <p class="lede">Bridging laboratory experiments and numerical models to make structures safer, lighter and longer-lasting — from fibre-reinforced and FRP-strengthened concrete to architected metamaterials, wind loads on hill terrain and precast pavements for mountain roads.</p>
+        <div class="cta">
+          <a class="btn primary" href="research.html">Explore research</a>
+          <a class="btn ghost" href="consultancy.html">Consultancy</a>
+          <a class="btn ghost" href="group.html">Join the group</a>
+        </div>
+      </div>
+      <!-- PHOTO: upload a portrait to images/varma.jpg and it appears here automatically -->
+      <div class="portrait">
+        <div class="mono">RKV</div>
+        <img data-optional src="images/varma.jpg" alt="Dr Rajendra Kumar Varma">
+        <div class="cap"><b>Structures &amp; Materials Research Group</b>IIT Jammu · Jagti campus · Jammu &amp; Kashmir</div>
       </div>
     </div>
-    <div class="portrait">
-      <div class="mono">RKV</div>
-      <div class="cap"><b>Structures &amp; Materials Group</b>IIT Jammu, Jagti campus<br>Jammu &amp; Kashmir, India</div>
-    </div>
-  </div>
-  <div class="wrap">
     <div class="stats">
       <div class="stat"><b>3</b><span>PhD graduates</span></div>
       <div class="stat"><b>3</b><span>Current doctoral scholars</span></div>
-      <div class="stat"><b>3</b><span>Sponsored projects — DST, DRDO, BRO</span></div>
+      <div class="stat"><b>20+</b><span>Journal &amp; conference papers</span></div>
       <div class="stat"><b>6+</b><span>Consultancy clients across J&amp;K and India</span></div>
     </div>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="wrap about-grid">
-    <div><div class="sec-num">01 — About</div></div>
-    <div class="about-body reveal">
-      <p>Dr Varma works at the meeting point of experimental testing and numerical simulation of concrete and composite structures.</p>
-      <p>He completed his PhD at the University of Minho, Portugal (2012), with a thesis on numerical models for simulating the cyclic behaviour of reinforced concrete structures incorporating new advanced materials. At Minho he carried out large-scale tests on reinforced concrete columns and implemented a 3D Timoshenko fibre model in the displacement-based finite element software FEMIX.</p>
-      <p>His expertise spans fibre-reinforced concrete, constitutive model development and its implementation in finite element programs, and the strengthening of RC members with carbon-fibre-reinforced polymers. At IIT Jammu he has broadened this foundation into lightweight metastructures, wave propagation in micropolar composite panels, wind engineering for hilly terrain and precast prestressed concrete pavements, while advising public agencies on the design, proof checking and testing of bridges and buildings across Jammu &amp; Kashmir and India.</p>
-      <div class="timeline">
-        <div class="tl"><div class="when">Present</div><div class="what">Associate Professor, Department of Civil Engineering</div><div class="where">Indian Institute of Technology Jammu</div></div>
-        <div class="tl"><div class="when">Earlier</div><div class="what">Assistant Professor, Department of Civil Engineering</div><div class="where">Indian Institute of Technology Jammu</div></div>
-        <div class="tl"><div class="when">2012</div><div class="what">PhD, Civil Engineering</div><div class="where">University of Minho, Portugal</div></div>
-      </div>
+<section>
+  <div class="wrap split">
+    <div><div class="sec-num">Welcome</div></div>
+    <div class="prose reveal">
+      <p class="lead">Dr Varma leads research at the meeting point of experimental testing and numerical simulation of concrete, composite and architected structures.</p>
+      <p>After a B.Tech in Civil Engineering at IIT Guwahati and a PhD in Structural Engineering at the University of Minho, Portugal, he joined IIT Jammu in 2017, where he served as Head of the Department of Civil Engineering from 2018 to 2020. Alongside research and teaching, he advises government agencies and industry on the design, proof checking and testing of bridges and buildings across Jammu &amp; Kashmir and India.</p>
+      <a class="textlink" href="about.html">Full biography →</a>
     </div>
   </div>
 </section>
 
-<!-- RESEARCH -->
-<section id="research" class="alt">
+<section class="alt">
   <div class="wrap">
-    <div class="sec-head">
-      <div class="sec-num">02 — Research</div>
-      <div class="reveal"><h2>From material models to mountain infrastructure</h2>
-      <p>Six connected themes, each combining laboratory testing, constitutive modelling and finite element analysis.</p></div>
-    </div>
-    <div class="areas">
-      <article class="area reveal">
-        <svg viewBox="0 0 48 48"><rect x="6" y="10" width="36" height="28" rx="1"/><path d="M10 16l6 4M20 14l4 6M30 15l5 3M12 28l6-3M24 30l5 4M33 26l4 5"/></svg>
-        <h3>Fibre-reinforced concrete</h3>
-        <p>Behaviour of steel-fibre and self-compacting concretes, strain-softening and strain-hardening response, and design curves for FRC members under axial load and bending.</p>
-        <div class="tags"><span class="tag">SFRC</span><span class="tag">SCC</span><span class="tag">Constitutive models</span></div>
-      </article>
-      <article class="area reveal">
-        <svg viewBox="0 0 48 48"><rect x="16" y="4" width="16" height="40"/><path d="M14 12h20M14 20h20M14 28h20M14 36h20"/></svg>
-        <h3>FRP strengthening &amp; cyclic behaviour of RC</h3>
-        <p>CFRP confinement and near-surface-mounted strengthening of RC columns and beams; models for monotonic and cyclic loading of confined concrete and 3D RC frames.</p>
-        <div class="tags"><span class="tag">CFRP</span><span class="tag">NSM</span><span class="tag">Seismic</span></div>
-      </article>
-      <article class="area reveal">
-        <svg viewBox="0 0 48 48"><path d="M24 6l9 5v10l-9 5-9-5V11zM15 21l-9 5v10l9 5 9-5M33 21l9 5v10l-9 5-9-5V26"/></svg>
-        <h3>Architected materials &amp; metastructures</h3>
-        <p>Honeycomb lattices and graded metastructures for lightweight energy absorption, acoustic and seismic isolation, with machine learning for failure-pattern-driven design.</p>
-        <div class="tags"><span class="tag">Lattices</span><span class="tag">Metamaterials</span><span class="tag">ML</span></div>
-      </article>
-      <article class="area reveal">
-        <svg viewBox="0 0 48 48"><path d="M4 24c4-10 8-10 12 0s8 10 12 0 8-10 12 0 4 5 4 5"/><path d="M4 38h40M4 10h40" stroke-dasharray="2 3"/></svg>
-        <h3>Wave propagation in composite panels</h3>
-        <p>Spectral element formulations for micropolar-Cosserat homogeneous, layered and periodic composite panels, including damping and flexural wave behaviour.</p>
-        <div class="tags"><span class="tag">Spectral FEM</span><span class="tag">Cosserat</span><span class="tag">Dynamics</span></div>
-      </article>
-      <article class="area reveal">
-        <svg viewBox="0 0 48 48"><path d="M4 40l12-14 8 6 10-16 10 24z"/><path d="M4 12h16c4 0 4-5 0-5M4 18h26c5 0 5 6 0 6"/></svg>
-        <h3>Wind engineering in hilly terrain</h3>
-        <p>Wind flow over hills and escarpments, local topography factors for design wind speeds, and wind effects on structures built in the Himalayan foothills.</p>
-        <div class="tags"><span class="tag">Topography</span><span class="tag">Design wind</span><span class="tag">Wind tunnel</span></div>
-      </article>
-      <article class="area reveal">
-        <svg viewBox="0 0 48 48"><rect x="4" y="18" width="12" height="14"/><rect x="18" y="18" width="12" height="14"/><rect x="32" y="18" width="12" height="14"/><path d="M4 25h40" stroke-dasharray="3 2"/></svg>
-        <h3>Precast prestressed pavements</h3>
-        <p>Precast prestressed concrete pavement panels for rapid, durable construction of strategic roads in mountainous regions, tested under cyclic loading.</p>
-        <div class="tags"><span class="tag">Precast</span><span class="tag">Prestressed</span><span class="tag">Hill roads</span></div>
-      </article>
+    <div class="sec-head"><div class="sec-num">Research</div>
+      <div class="reveal"><h2>Six connected research themes</h2><p>Each theme combines laboratory testing, constitutive modelling and finite element analysis. Select a theme to read more.</p></div></div>
+    <div class="cards"><a class="card reveal" href="research.html#frc"><svg class="ico" viewBox="0 0 48 48"><rect x="6" y="10" width="36" height="28" rx="1"/><path d="M10 16l6 4M20 14l4 6M30 15l5 3M12 28l6-3M24 30l5 4M33 26l4 5"/></svg><h3>Fibre-reinforced concrete</h3><p>Constitutive behaviour and design of steel-fibre and self-compacting concretes.</p><span class="go">Read more →</span></a><a class="card reveal" href="research.html#frp"><svg class="ico" viewBox="0 0 48 48"><rect x="16" y="4" width="16" height="40"/><path d="M14 12h20M14 20h20M14 28h20M14 36h20"/></svg><h3>FRP strengthening &amp; cyclic RC behaviour</h3><p>CFRP confinement, NSM strengthening and fibre-based models of RC frames.</p><span class="go">Read more →</span></a><a class="card reveal" href="research.html#meta"><svg class="ico" viewBox="0 0 48 48"><path d="M24 6l9 5v10l-9 5-9-5V11zM15 21l-9 5v10l9 5 9-5M33 21l9 5v10l-9 5-9-5V26"/></svg><h3>Architected materials &amp; metastructures</h3><p>Lattices and graded metastructures designed with mechanics and machine learning.</p><span class="go">Read more →</span></a><a class="card reveal" href="research.html#waves"><svg class="ico" viewBox="0 0 48 48"><path d="M4 24c4-10 8-10 12 0s8 10 12 0 8-10 12 0 4 5 4 5"/><path d="M4 38h40M4 10h40" stroke-dasharray="2 3"/></svg><h3>Wave propagation &amp; structural dynamics</h3><p>Spectral element methods for micropolar-Cosserat periodic composite panels.</p><span class="go">Read more →</span></a><a class="card reveal" href="research.html#wind"><svg class="ico" viewBox="0 0 48 48"><path d="M4 40l12-14 8 6 10-16 10 24z"/><path d="M4 12h16c4 0 4-5 0-5M4 18h26c5 0 5 6 0 6"/></svg><h3>Wind engineering in hilly terrain</h3><p>Wind-tunnel studies of hills, escarpments and buildings in mountain regions.</p><span class="go">Read more →</span></a><a class="card reveal" href="research.html#pave"><svg class="ico" viewBox="0 0 48 48"><rect x="4" y="18" width="12" height="14"/><rect x="18" y="18" width="12" height="14"/><rect x="32" y="18" width="12" height="14"/><path d="M4 25h40" stroke-dasharray="3 2"/></svg><h3>Precast prestressed pavements</h3><p>Rapid, durable pavement panels for strategic roads in mountainous areas.</p><span class="go">Read more →</span></a></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><div class="sec-num">Highlights</div>
+      <div class="reveal"><h2>Recent news</h2></div></div>
+    <ul class="news reveal">
+      <li><span class="d">2026</span><span class="t">New article in <b>Composite Structures</b> on machine-intelligence-driven anti-curvature metamaterials.</span></li>
+      <li><span class="d">Mar 2026</span><span class="t"><b>Dr Bhargav Reddy Isanaka</b> defends his PhD; now a Research Fellow at the University of Southampton, UK.</span></li>
+      <li><span class="d">Oct 2025</span><span class="t">Group research on structural imperfections in honeycomb lattices presented at <b>IMPLAST 2025</b>, IIT Roorkee.</span></li>
+      <li><span class="d">Jun 2024</span><span class="t">Work on lattice metamaterials presented at <b>ECCOMAS 2024</b> (Lisbon) and <b>EMI/PMC 2024</b> (Chicago).</span></li>
+      <li><span class="d">2024</span><span class="t"><b>Dr Abdul Haseeb Wani</b> completes his PhD on wind effects on buildings in hilly terrain; joins MIET Jammu as Assistant Professor.</span></li>
+      <li><span class="d">Aug 2023</span><span class="t">Wind-tunnel research on steep escarpments presented at the <b>16th International Conference on Wind Engineering</b>, Florence.</span></li>
+      <li><span class="d">2023</span><span class="t"><b>Dr Satyendra Kumar Singh</b> completes his PhD on wave propagation in micropolar-Cosserat composite panels.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="band">
+      <a class="b1 reveal" href="consultancy.html"><span class="eyebrow">Consultancy &amp; industry</span><h3>Engineering expertise for infrastructure</h3><p>Structural design and assessment, bridge proof checking, finite element modelling and material testing for public agencies and industry.</p><div class="go">Consultancy &amp; industry engagement →</div></a>
+      <a class="b2 reveal" href="group.html"><span class="eyebrow" style="color:var(--accent)">Research group</span><h3>Doctoral researchers &amp; alumni</h3><p>Meet current PhD scholars and alumni now at the University of Southampton, MIET Jammu and IIT Jammu — and find out how to join.</p><div class="go">Meet the group →</div></a>
     </div>
   </div>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects">
+<section>
   <div class="wrap">
-    <div class="sec-head">
-      <div class="sec-num">03 — Projects</div>
-      <div class="reveal"><h2>Sponsored research</h2>
-      <p>Funded projects with national science and defence agencies.</p></div>
-    </div>
-    <div class="proj-list">
-      <div class="proj reveal">
-        <div class="yr">Ongoing</div>
-        <div><h3>Precast prestressed concrete pavement panels</h3><p>Development, testing under cyclic loading and design guidance for precast prestressed pavement panels for road infrastructure in hilly regions.</p></div>
-        <div class="meta"><b>Border Roads Organisation</b><span class="pill on">Ongoing</span></div>
-      </div>
-      <div class="proj reveal">
-        <div class="yr">2023 – 2025</div>
-        <div><h3>Lightweight multifunctionally graded metastructures</h3><p>Lattice-infilled annular tubes for enhanced energy absorption.</p></div>
-        <div class="meta"><b>ARDB – DRDO</b>Co-PI<br><span class="pill done">Completed</span></div>
-      </div>
-      <div class="proj reveal">
-        <div class="yr">2021 – 2023</div>
-        <div><h3>IC-IMPACTS Metawall</h3><p>Metamaterial-based lightweight panel wall for enhanced building acoustic and seismic resistance.</p></div>
-        <div class="meta"><b>DST (IC-IMPACTS)</b>Co-PI<br><span class="pill done">Completed</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONSULTANCY -->
-<section id="consultancy" class="consult">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="sec-num" style="color:#e9a57f;border-color:#e9a57f">04 — Consultancy</div>
-      <div class="reveal"><h2>Engineering support for structures across India</h2>
-      <p>Through IIT Jammu, Dr Varma provides independent design, proof checking and testing services to government agencies and contractors, with particular experience of the terrain, climate and seismic demands of Jammu &amp; Kashmir.</p></div>
-    </div>
-    <div class="services">
-      <div class="svc reveal"><div class="n">01</div><h3>Structural design</h3><p>Design of bridge substructures, abutments and institutional buildings in reinforced and prestressed concrete.</p></div>
-      <div class="svc reveal"><div class="n">02</div><h3>Proof checking &amp; vetting</h3><p>Independent review of design calculations and drawings for bridges, buildings and roadway structures.</p></div>
-      <div class="svc reveal"><div class="n">03</div><h3>Testing &amp; assessment</h3><p>Material and structural testing, condition assessment and advice on strengthening and retrofitting.</p></div>
-    </div>
-    <h4>Selected consultancy projects</h4>
-    <div class="cprojects">
-      <div class="cp"><span>Design of abutment, Project Sampark</span><span>BRO · Jammu</span></div>
-      <div class="cp"><span>Proof checking of bridges, Akhnoor road (144A)</span><span>BRO · Jammu</span></div>
-      <div class="cp"><span>Proof checking of Ramban bridges</span><span>Gammon India · J&amp;K</span></div>
-      <div class="cp"><span>Testing for AIIMS Awantipora</span><span>CPWD · Kashmir</span></div>
-      <div class="cp"><span>Design for NIPER</span><span>CPWD · Kolkata</span></div>
-      <div class="cp"><span>Further sponsored testing and design works</span><span>PWD · MES · private</span></div>
-    </div>
-    <div class="clients">
-      <span>Border Roads Organisation</span><span>CPWD</span><span>Military Engineer Services</span><span>Public Works Department</span><span>Gammon India</span><span>Private contractors</span>
-    </div>
-    <div class="note reveal">Agencies and firms seeking design, vetting or testing support are welcome to get in touch via the <a href="#contact">contact details below</a>. Consultancy is undertaken through the IIT Jammu consultancy framework.</div>
-  </div>
-</section>
-
-<!-- GROUP -->
-<section id="group" class="alt">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="sec-num">05 — Research group</div>
-      <div class="reveal"><h2>People</h2>
-      <p>Doctoral researchers and alumni whose work spans composite mechanics, wind engineering, architected materials and pavement engineering.</p></div>
-    </div>
-
-    <div class="grp-label">Current PhD scholars</div>
-    <div class="people">
-      <div class="person reveal">
-        <div class="ph"><div class="av" style="background:#5e7d6e">SK</div><div><h3>Saalim Bin Kaisar</h3><div class="deg">PhD scholar</div></div></div>
-        <div class="now">Department of Civil Engineering, IIT Jammu</div>
-        <div class="topic"><em>Research</em>Effect of wind on structures in hilly terrain</div>
-        <div class="links"><a href="https://www.linkedin.com/in/saalim-bin-kaisar-35375a250/" target="_blank" rel="noopener">LinkedIn ↗</a></div>
-      </div>
-      <div class="person reveal">
-        <div class="ph"><div class="av" style="background:#7a6a4f">AM</div><div><h3>Ashfaq Malik</h3><div class="deg">PhD scholar</div></div></div>
-        <div class="now">Department of Civil Engineering, IIT Jammu</div>
-        <div class="topic"><em>Research</em>Precast prestressed concrete pavement panels</div>
-        <div class="links"><a href="https://scholar.google.com/citations?user=UEXnjYAAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar ↗</a></div>
-      </div>
-      <div class="person reveal">
-        <div class="ph"><div class="av" style="background:#8a5a6b">SS</div><div><h3>Swati Singh</h3><div class="deg">PhD scholar</div></div></div>
-        <div class="now">Department of Civil Engineering, IIT Jammu</div>
-        <div class="topic"><em>Research</em>To be announced</div>
-        <div class="links"><a href="https://www.linkedin.com/in/swati-singh-799b82216/" target="_blank" rel="noopener">LinkedIn ↗</a></div>
-      </div>
-    </div>
-
-    <div class="grp-label">PhD alumni</div>
-    <div class="people">
-      <div class="person reveal">
-        <div class="ph"><div class="av" style="background:#1f3a52">BI</div><div><h3>Dr Bhargav Reddy Isanaka</h3><div class="deg">PhD 2026</div></div></div>
-        <div class="now">Research Fellow, Department of Aeronautical and Astronautical Engineering, University of Southampton, UK</div>
-        <div class="topic"><em>Thesis area</em>Architected lattice materials, computational mechanics and machine learning</div>
-        <div class="links"><a href="https://bhargavisanaka.com/" target="_blank" rel="noopener">Website ↗</a></div>
-      </div>
-      <div class="person reveal">
-        <div class="ph"><div class="av" style="background:#b4532a">AW</div><div><h3>Dr Abdul Haseeb Wani</h3><div class="deg">PhD 2024</div></div></div>
-        <div class="now">Assistant Professor, Model Institute of Engineering and Technology (MIET), Jammu</div>
-        <div class="topic"><em>Thesis area</em>Wind flow over hills and escarpments; topography factors for design wind speeds</div>
-        <div class="links"><a href="https://scholar.google.com/citations?user=viexMWYAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar ↗</a></div>
-      </div>
-      <div class="person reveal">
-        <div class="ph"><div class="av" style="background:#3b4a57">SS</div><div><h3>Dr Satyendra Kumar Singh</h3><div class="deg">PhD 2023</div></div></div>
-        <div class="now">Visiting Research Fellow, Indian Institute of Technology Jammu</div>
-        <div class="topic"><em>Thesis area</em>Static, dynamic and wave propagation analysis of micropolar-Cosserat composite panels</div>
-        <div class="links"><a href="https://scholar.google.com/citations?user=kvPUgHsAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar ↗</a></div>
-      </div>
-    </div>
-
-    <div class="grp-label">Postgraduate students</div>
-    <div class="empty" style="margin-bottom:56px">M.Tech and other postgraduate researchers — details coming soon.</div>
-
-    <div class="join reveal">
-      <div><h3>Prospective students</h3><p>Motivated candidates interested in structural mechanics, concrete and composite structures, metamaterials or wind engineering are encouraged to apply through IIT Jammu's PhD and M.Tech admission rounds, and may write in advance with a CV and a short statement of interests.</p></div>
-      <ul><li>PhD — Civil Engineering, IIT Jammu</li><li>M.Tech — Structural Engineering</li><li>Internships &amp; project positions when available</li></ul>
-    </div>
-  </div>
-</section>
-
-<!-- PUBLICATIONS -->
-<section id="publications">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="sec-num">06 — Publications</div>
-      <div class="reveal"><h2>Selected publications</h2>
-      <p>A representative selection. The complete, up-to-date list is on Google Scholar.</p></div>
-    </div>
-    <div class="filters" role="group" aria-label="Filter publications">
-      <button class="on" data-f="all">All</button>
-      <button data-f="meta">Metamaterials &amp; waves</button>
-      <button data-f="wind">Wind engineering</button>
-      <button data-f="frp">Concrete &amp; FRP</button>
-    </div>
-    <ol class="pubs" id="pubs"></ol>
-    <div class="more">
-      <a class="btn dark" href="https://scholar.google.com/citations?user=NxhLUnAAAAAJ&amp;hl=en" target="_blank" rel="noopener">Full list on Google Scholar ↗</a>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="alt">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="sec-num">07 — Contact</div>
-      <div class="reveal"><h2>Get in touch</h2>
-      <p>For research collaboration, student enquiries or consultancy requests.</p></div>
-    </div>
-    <div class="contact-grid">
-      <div class="contact-card reveal">
-        <div class="row"><div class="k">Name</div><div>Dr Rajendra Kumar Varma</div></div>
-        <div class="row"><div class="k">Position</div><div>Associate Professor, Department of Civil Engineering</div></div>
-        <div class="row"><div class="k">Address</div><div>Indian Institute of Technology Jammu<br>Jagti, PO Nagrota, NH-44<br>Jammu, Jammu &amp; Kashmir 181221, India</div></div>
-        <div class="row"><div class="k">Email</div><div class="todo">to be added</div></div>
-        <div class="row"><div class="k">Profiles</div><div>
-          <a href="https://iitjammu.ac.in/faculty/~rajendrakvarma" target="_blank" rel="noopener">IIT Jammu</a> ·
-          <a href="https://scholar.google.com/citations?user=NxhLUnAAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a> ·
-          <a href="https://www.linkedin.com/in/rajendra-kumar-56a083a/" target="_blank" rel="noopener">LinkedIn</a></div></div>
-      </div>
-      <div class="map-art reveal">
-        <svg viewBox="0 0 500 360" preserveAspectRatio="xMidYMid slice" style="position:absolute;inset:0;width:100%;height:100%" aria-hidden="true">
-          <g fill="none" stroke="#2c4a66" stroke-width="1">
-            <path d="M0 300 C80 260 140 280 220 230 S360 170 500 190"/>
-            <path d="M0 270 C90 230 150 250 230 200 S370 140 500 160"/>
-            <path d="M0 240 C100 200 160 220 240 170 S380 110 500 130"/>
-            <path d="M0 210 C110 170 170 190 250 140 S390 80 500 100"/>
-            <path d="M0 180 C120 140 180 160 260 110 S400 50 500 70"/>
-            <path d="M0 150 C130 110 190 130 270 80 S410 20 500 40"/>
-          </g>
-          <circle cx="260" cy="150" r="7" fill="#b4532a"/><circle cx="260" cy="150" r="18" fill="none" stroke="#b4532a" opacity=".5"/>
-        </svg>
-        <div class="lbl"><b>IIT Jammu, Jagti</b><span>Jammu &amp; Kashmir · 32.80° N, 74.90° E</span></div>
-      </div>
-    </div>
+    <div class="sec-head"><div class="sec-num">Publications</div>
+      <div class="reveal"><h2>Latest publications</h2></div></div>
+    <ol class="pubs" id="latest"></ol>
+    <div class="more-row"><a class="btn line" href="publications.html">All publications &amp; conferences →</a></div>
   </div>
 </section>
 </main>
-
-<footer>
-  <div class="wrap">
-    <div>© <span id="yr"></span> Dr Rajendra Kumar Varma · Department of Civil Engineering, IIT Jammu</div>
-    <div><a href="#home">Back to top ↑</a></div>
-  </div>
-</footer>
-
+<script src="assets/data.js"></script>
+<script src="assets/site.js"></script>
 <script>
-const PUBS=[
- {y:2023,f:"meta",t:"Wave propagation analysis of micropolar-Cosserat periodic composite panels: spectral element formulation",a:"S.K. Singh, R.K. Varma, A. Banerjee, K.K. Rathore",v:"Acta Mechanica",doi:"10.1007/s00707-023-03597-0"},
- {y:2023,f:"wind",t:"Local topography factor for design wind speeds near and on the escarpment with gentle slope",a:"A.H. Wani, R.K. Varma, A.K. Ahuja",v:"Asian Journal of Civil Engineering 24, 619–628",doi:"10.1007/s42107-022-00529-6"},
- {y:2023,f:"meta",t:"Flexural wave propagation in periodic micropolar-Cosserat panels: spectral element formulation",a:"S.K. Singh, A. Baxy, A. Banerjee, D. Bhattacharya, R.K. Varma",v:"European Journal of Mechanics – A/Solids 97, 104812"},
- {y:2022,f:"meta",t:"On exploiting machine learning for failure pattern driven strength enhancement of honeycomb lattices",a:"B.R. Isanaka, T. Mukhopadhyay, R.K. Varma, V. Kushvaha",v:"Acta Materialia 239, 118226"},
- {y:2022,f:"frp",t:"A review on performance of near-surface mounted carbon fiber-reinforced polymer laminates bonded into slits",a:"S. Gupta, A. Sharma, R.K. Varma, V. Kushvaha",v:"Polymer Composites 43, 6782–6802"},
- {y:2022,f:"meta",t:"Static and dynamic analysis of homogeneous micropolar-Cosserat panels",a:"S.K. Singh, A. Banerjee, R.K. Varma, S. Adhikari, S. Das",v:"Mechanics of Advanced Materials and Structures 29, 2757–2768"},
- {y:2021,f:"meta",t:"Spectral element formulation for damped transversely isotropic micropolar-Cosserat layered composite panels",a:"S.K. Singh, A. Banerjee, R.K. Varma, S. Adhikari",v:"Mechanics of Materials 160, 103898"},
- {y:2021,f:"wind",t:"Experimental investigation of wind flow characteristics over hills and escarpments — a review",a:"A.H. Wani, R.K. Varma, A.K. Ahuja",v:"Wind and Structures 32, 393"},
- {y:2012,f:"frp",t:"Numerical models for the simulation of the cyclic behaviour of RC structures incorporating new advanced materials",a:"R.K. Varma",v:"PhD thesis, University of Minho, Portugal"},
- {y:2009,f:"frp",t:"Numerical model for CFRP confined concrete elements subject to monotonic and cyclic loadings",a:"R.K. Varma, J.A.O. Barros, J.M. Sena-Cruz",v:"Composites Part B: Engineering 40, 766–775"},
- {y:2009,f:"frp",t:"Cost competitive steel fibre reinforced SCC for structural applications",a:"J.A.O. Barros, L.A. Lourenço, R.K. Varma, D.M. Gonçalves",v:"The Indian Concrete Journal 83, 15–26"},
- {y:2008,f:"frp",t:"Near surface mounted CFRP strips for the flexural strengthening of RC columns: experimental and numerical research",a:"J.A.O. Barros, R.K. Varma, J.M. Sena-Cruz, A.F.M. Azevedo",v:"Engineering Structures 30, 3412–3425"},
- {y:2007,f:"frp",t:"CFRP-confined reinforced concrete elements subjected to cyclic compressive loading",a:"J.A.O. Barros, D. Ferreira, R.K. Varma",v:"ACI Special Publication 258"}
-];
-const list=document.getElementById('pubs');
-function bold(a){return a.replace(/R\.K\. Varma/g,'<b>R.K. Varma</b>')}
-function render(f){
-  list.innerHTML=PUBS.filter(p=>f==='all'||p.f===f).map(p=>`<li class="pub"><div class="y">${p.y}</div><div><div class="t">${p.t}</div><div class="a">${bold(p.a)}</div><div class="v">${p.v}${p.doi?`<a href="https://doi.org/${p.doi}" target="_blank" rel="noopener">DOI ↗</a>`:''}</div></div></li>`).join('');
-}
-render('all');
-document.querySelectorAll('.filters button').forEach(b=>b.addEventListener('click',()=>{
-  document.querySelectorAll('.filters button').forEach(x=>x.classList.remove('on'));b.classList.add('on');render(b.dataset.f);
-}));
-document.getElementById('yr').textContent=new Date().getFullYear();
-
-const nav=document.querySelector('header.nav'),menu=document.getElementById('menu'),mb=document.querySelector('.menu-btn');
-mb.addEventListener('click',()=>{const o=menu.classList.toggle('open');mb.setAttribute('aria-expanded',o)});
-menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.classList.remove('open');mb.setAttribute('aria-expanded',false)}));
-addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>10),{passive:true});
-
-const links=[...menu.querySelectorAll('a')];
-const secs=links.map(a=>document.querySelector(a.getAttribute('href')));
-if('IntersectionObserver' in window){
-  const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.toggle('active',l.getAttribute('href')==='#'+e.target.id))}}),{rootMargin:'-45% 0px -50% 0px'});
-  secs.forEach(s=>s&&so.observe(s));
-  const ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target)}}),{threshold:.12});
-  document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
-}else{document.querySelectorAll('.reveal').forEach(el=>el.classList.add('in'))}
+document.getElementById('latest').innerHTML = PUBS.slice(0,4).map(p=>{const L=pubLink(p);return `<li class="pub"><div class="y">${p.y}</div><div><div class="t"><a href="${L.href}" target="_blank" rel="noopener">${p.t}</a></div><div class="a">${boldMe(p.a)}</div><div class="v">${p.v}</div></div><div class="l"><a href="${L.href}" target="_blank" rel="noopener">${L.label}</a></div></li>`}).join('');
 </script>
 </body>
 </html>

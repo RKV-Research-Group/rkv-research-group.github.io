@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Publications — Dr Rajendra Kumar Varma, IIT Jammu</title>
+<meta name="description" content="Journal articles and conference presentations by Dr Rajendra Kumar Varma and group on concrete, FRP, metamaterials, wave propagation and wind engineering.">
+<link rel="canonical" href="https://rkv-research-group.github.io/publications.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rkv-research-group.github.io/publications.html">
+<meta property="og:title" content="Publications — Dr Rajendra Kumar Varma, IIT Jammu">
+<meta property="og:description" content="Journal articles and conference presentations by Dr Rajendra Kumar Varma and group on concrete, FRP, metamaterials, wave propagation and wind engineering.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2316283a'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='28' fill='%23ffffff' text-anchor='middle'%3ERKV%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="publications.html">
+<main>
+<section class="page-head"><svg class="hero-art" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+<defs><pattern id="hex" width="56" height="97" patternUnits="userSpaceOnUse" patternTransform="scale(.9)"><path d="M28 0 L56 16 L56 48 L28 64 L0 48 L0 16 Z M28 64 L28 97" fill="none" stroke="#3a5a78" stroke-width="1"/></pattern>
+<linearGradient id="fade" x1="0" x2="1"><stop offset="0" stop-color="#16283a"/><stop offset=".55" stop-color="#16283a" stop-opacity=".2"/><stop offset="1" stop-color="#16283a" stop-opacity="0"/></linearGradient></defs>
+<rect width="1200" height="700" fill="url(#hex)"/><rect width="1200" height="700" fill="url(#fade)"/>
+<path d="M0 610 L140 520 L230 570 L380 430 L500 520 L640 380 L760 470 L880 360 L1010 470 L1200 400 L1200 700 L0 700Z" fill="#12222f" opacity=".9"/>
+<path d="M0 640 L180 580 L320 620 L470 540 L620 600 L800 520 L960 590 L1200 530 L1200 700 L0 700Z" fill="#0f1c28"/></svg><div class="wrap">
+<div class="crumbs"><a href="index.html">Home</a> / Publications</div>
+<h1>Publications &amp; conferences</h1><p>Journal articles, conference papers and presentations. Each title links to the paper; the complete list is on Google Scholar.</p><div class="jump"><a href="#papers">Publications</a><a href="#conferences">Conference presentations</a></div></div></section>
+
+<section id="papers">
+  <div class="wrap">
+    <div class="filters" role="group" aria-label="Filter publications">
+      <button class="on" data-f="all">All</button>
+      <button data-f="meta">Architected materials</button>
+      <button data-f="waves">Waves &amp; dynamics</button>
+      <button data-f="wind">Wind engineering</button>
+      <button data-f="frp">Concrete &amp; FRP</button>
+      <span class="count" id="count"></span>
+    </div>
+    <ol class="pubs" id="pubs"></ol>
+    <div class="cta"><a class="btn dark" href="https://scholar.google.com/citations?user=NxhLUnAAAAAJ&hl=en" target="_blank" rel="noopener">Full list on Google Scholar ↗</a><a class="btn line" href="https://www.researchgate.net/profile/Rajendra-Varma" target="_blank" rel="noopener">ResearchGate ↗</a></div>
+  </div>
+</section>
+<section class="alt" id="conferences">
+  <div class="wrap">
+    <div class="sec-head"><div class="sec-num">Conferences</div><div class="reveal"><h2>International &amp; national conferences</h2><p>Research from the group presented in Italy, Portugal, the USA, Qatar and India.</p></div></div>
+    <div class="confs" id="confs"></div>
+  </div>
+</section></main>
+<script src="assets/data.js"></script>
+<script src="assets/site.js"></script>
+<script>
+const list=document.getElementById('pubs'),cnt=document.getElementById('count');
+function render(f){const L=PUBS.filter(p=>f==='all'||p.tags.includes(f));
+ cnt.textContent=L.length+' item'+(L.length===1?'':'s');
+ list.innerHTML=L.map(p=>{const k=pubLink(p);const kind=p.kind!=='journal'?`<span class="kind">${p.kind}</span>`:'';
+ return `<li class="pub"><div class="y">${p.y}</div><div><div class="t"><a href="${k.href}" target="_blank" rel="noopener">${p.t}</a></div><div class="a">${boldMe(p.a)}</div><div class="v">${p.v}${kind}</div></div><div class="l"><a href="${k.href}" target="_blank" rel="noopener">${k.label}</a></div></li>`}).join('');}
+render('all');
+document.querySelectorAll('.filters button').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filters button').forEach(x=>x.classList.remove('on'));b.classList.add('on');render(b.dataset.f)}));
+document.getElementById('confs').innerHTML=CONFS.map(c=>`<div class="conf reveal in"><div class="flag">${c.flag}</div><div><h3>${c.t}</h3><div class="w">${c.name}</div><p>${c.where}<br><i>${boldMe(c.a)}</i></p></div></div>`).join('');
+</script>
+</body>
+</html>
