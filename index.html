@@ -110,6 +110,14 @@
 </main>
 <script src="data.js"></script>
 <script src="site.js"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Rajendra Kumar Varma","alternateName":["Dr Rajendra Kumar Varma","R. K. Varma","Rajendra K. Varma","Dr R K Varma"],
+"jobTitle":"Associate Professor","url":"https://rkv-research-group.github.io/","email":"mailto:rajendra.varma@iitjammu.ac.in",
+"worksFor":{"@type":"CollegeOrUniversity","name":"Indian Institute of Technology Jammu","department":{"@type":"Organization","name":"Department of Civil Engineering"}},
+"alumniOf":[{"@type":"CollegeOrUniversity","name":"University of Minho"},{"@type":"CollegeOrUniversity","name":"Indian Institute of Technology Guwahati"}],
+"knowsAbout":["Structural engineering","Fibre-reinforced concrete","FRP strengthening","Finite element method","Architected materials","Metamaterials","Wind engineering","Precast prestressed pavements"],
+"sameAs":["https://iitjammu.ac.in/faculty/~rajendrakvarma","https://scholar.google.com/citations?user=NxhLUnAAAAAJ","https://www.researchgate.net/profile/Rajendra-Varma","https://www.linkedin.com/in/rajendra-kumar-56a083a/"]}
+</script>
 <script>
 document.getElementById('latest').innerHTML = PUBS.slice(0,4).map(p=>{const L=pubLink(p);return `<li class="pub"><div class="y">${p.y}</div><div><div class="t"><a href="${L.href}" target="_blank" rel="noopener">${p.t}</a></div><div class="a">${boldMe(p.a)}</div><div class="v">${p.v}</div></div><div class="l"><a href="${L.href}" target="_blank" rel="noopener">${L.label}</a></div></li>`}).join('');
 </script>
